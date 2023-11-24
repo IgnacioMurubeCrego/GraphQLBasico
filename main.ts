@@ -23,7 +23,7 @@ type Mutation {
 `;
 
 // Mongo Cluster Connection
-const MONGO_URL = Deno.env.get("MONGO_URL");
+const MONGO_URL = "mongodb+srv://ignacio:12345@cluster-nebrija.dcz44mk.mongodb.net/graphQLBasico?retryWrites=true&w=majority";
 if(!MONGO_URL){
   console.log("MONGO_URL not defined.");
   Deno.exit(1);
